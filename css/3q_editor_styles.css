@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+.threeQ_preview_wrapper{
+	position: relative;
+	background-color: black;
+}
+
+.threeQ_preview_wrapper:before {
+	display: block;
+	content: "";
+	width: 100%;
+	padding-top: 56.25%;
+}
+
+.threeQ_preview_wrapper img{
+	min-width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.threeQ_preview_wrapper:after {
+	content: url('../images/play-button-80.png');
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
